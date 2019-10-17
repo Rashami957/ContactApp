@@ -1,0 +1,44 @@
+{% extends 'contact/base.html' %}
+{% block content %}
+<form method="GET">
+    Search: <input type="text" name="search"><br/>
+
+    <input type="submit" value="Submit" />
+</form><br/><br/>
+
+
+
+    <div class="card" style="width: 18rem;">
+
+        <ul class="list-group list-group-flush">
+            {% for person in persons %}
+                <div>
+                    <li class="list-group-item"><a href="{% url 'contact:contact_detail' person.id %}">{{ person.full_name }}</a></li>
+                </div>
+            {% endfor %}
+
+        </ul>
+     <ol class="list-group list-group-flush">
+            {% for questions in questions %}
+
+                <div>
+                    <li class="list-group-item"><a href="{% url 'contact:contact_detail' questions.id%}">{{ questions.full_name}}</a></li>
+                </div>
+            {% endfor %}
+        </ol>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <ol class="list-group list-group-flush">
+            {% for questions in questions %}
+
+                <div>
+                    <li class="list-group-item"><a href="{% url 'contact:contact_detail'%}">{{ questions.full_name}}</a></li>
+                </div>
+            {% endfor %}
+        </ol>
+    </div>
+
+
+
+
+{% endblock %}
