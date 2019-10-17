@@ -7,4 +7,4 @@ IDE:PyCharm
 
 Technologies Used: Python,Django,Sqlite
 
-Dtabase: Integrated with IDE.
+Database: Integrated with Pycharm IDE.
