@@ -8,3 +8,4 @@ IDE:PyCharm
 Technologies Used: Python,Django,Sqlite
 
 Database: Integrated with Pycharm IDE.
+
